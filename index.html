@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password validator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Password validator</li>
+            <li><a href="passwordgenerator.html" class="generatebtn">Generate password</a></li>
+        </ul>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Password Validator App</h1>
+            <p>Check the validity and strength of your passwords with our app. Ensure your online accounts are secure.</p>
+          </div>
+        </div>
+    </div>
+    <div class="input-container">
+        <input type="text" id="passwordInput" placeholder="Enter your password..." oninput="checkInput()">
+        <button id="checkButton" disabled onclick="checkPasswordStrength()">Check</button>
+      </div>  
+      <div class="loader-container">
+        <div class="loader" id="loader" style="display: none;"></div>
+      </div>
+      
+      <div class="cards-container" id="cards-container">
+        <div class="card" id="display-strength"></div>
+        <div class="card" id="security-facts">
+            <h2>Security Facts To Consider</h2>
+            <div class="fact"><span class="tick">&#10004;</span> Use a unique password for each account.</div>
+            <div class="fact"><span class="tick">&#10004;</span> Enable two-factor authentication where available.</div>
+            <div class="fact"><span class="tick">&#10004;</span> Regularly update your passwords.</div>
+            <div class="fact"><span class="tick">&#10004;</span> Avoid using common or easily guessable passwords.</div>
+            <div class="fact"><span class="tick">&#10004;</span> Use a reputable password manager to securely store passwords.</div>
+        </div>
+    </div>
+      
+        
+</body>
+</html>
